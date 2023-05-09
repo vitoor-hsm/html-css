@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimunua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/IceFireKingCanyon.mp3.mp3" controls></audio>
+    <audio preload="metadata" controls loop>
+        <source src="midia/EmotionalMess.mp3.mp3" type="audio/mpeg">
+        <!--Esse segundo codigo tbm roda outros arquivos de audio, tipo ogg, wav é só trocar oq tem escrito no type para audio/ogg ou wav. O mp3 é o unico diferente pq é mpeg-->
+    </audio>
+    <p>Caso não seja possível reproduzir o seu audio <a href="midia/EmotionalMess.mp3.mp3" target="_blank">clique aqui</a> para baixa-lo</p>
+</body>
+</html>
